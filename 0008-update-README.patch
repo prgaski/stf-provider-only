@@ -1,0 +1,25 @@
+From 602cf403a9013c077322a613dbd71247a0767155 Mon Sep 17 00:00:00 2001
+From: Patrick Gaskin <pg7254@outlook.com>
+Date: Tue, 13 May 2025 23:05:19 -0400
+Subject: [PATCH 08/10] update README
+
+---
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/README.md b/README.md
+index 6039272c..75020a6e 100644
+--- a/README.md
++++ b/README.md
+@@ -4,6 +4,8 @@ STF with non-provider stuff stripped out to make it simpler to build and improve
+ 
+ Fixes can still be cherry-picked over it; the actual JS files are mostly untouched.
+ 
++To update vendored `@devicefarmer` packages, run `npm pack @devicefarmer/WHATEVER` and put the tgz in `vendor/npm`, then update `package.json`.
++
+ Supported architectures:
+ - x86_64
+ - arm64
+-- 
+2.49.0
+

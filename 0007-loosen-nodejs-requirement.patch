@@ -1,0 +1,25 @@
+From bf31187f918d2c641097d32f23fa52b465496af7 Mon Sep 17 00:00:00 2001
+From: Patrick Gaskin <pg7254@outlook.com>
+Date: Tue, 13 May 2025 22:57:02 -0400
+Subject: [PATCH 07/10] loosen nodejs requirement
+
+to match debian bookworm's packaged version
+---
+ package.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/package.json b/package.json
+index fdd23adc..bd4d18be 100644
+--- a/package.json
++++ b/package.json
+@@ -41,6 +41,6 @@
+     "zeromq": "^6.4.2"
+   },
+   "engines": {
+-    "node": ">= 18.20.5"
++    "node": ">= 18.19.0"
+   }
+ }
+-- 
+2.49.0
+

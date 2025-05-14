@@ -1,0 +1,61 @@
+From 06a58e4c599fa062f44336914dd918236c5a1f24 Mon Sep 17 00:00:00 2001
+From: Patrick Gaskin <pg7254@outlook.com>
+Date: Tue, 13 May 2025 22:40:38 -0400
+Subject: [PATCH 04/10] more package.json cleanup
+
+we don't need protobuf on the host (protobufjs is pure js)
+---
+ package.json | 30 +-----------------------------
+ 1 file changed, 1 insertion(+), 29 deletions(-)
+
+diff --git a/package.json b/package.json
+index 689ba8a1..c736a104 100644
+--- a/package.json
++++ b/package.json
+@@ -2,26 +2,8 @@
+   "name": "@devicefarmer/stf",
+   "version": "3.7.5",
+   "description": "Smartphone Test Farm",
+-  "keywords": [
+-    "adb",
+-    "android",
+-    "stf",
+-    "test",
+-    "remote"
+-  ],
+-  "bugs": {
+-    "url": "https://github.com/DeviceFarmer/stf/issues"
+-  },
++  "private": true,
+   "license": "Apache-2.0",
+-  "author": {
+-    "name": "DeviceFarmer",
+-    "email": "contact@devicefarmer.com",
+-    "url": "https://devicefarmer.com"
+-  },
+-  "repository": {
+-    "type": "git",
+-    "url": "https://github.com/DeviceFarmer/stf.git"
+-  },
+   "bin": {
+     "stf": "./bin/stf"
+   },
+@@ -60,15 +42,5 @@
+   },
+   "engines": {
+     "node": ">= 18.20.5"
+-  },
+-  "externalDependencies": {
+-    "zeromq": ">= 4",
+-    "protobuf": ">= 3",
+-    "adb": "~1"
+-  },
+-  "preferGlobal": true,
+-  "collective": {
+-    "type": "opencollective",
+-    "url": "https://opencollective.com/openstf"
+   }
+ }
+-- 
+2.49.0
+

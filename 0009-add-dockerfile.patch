@@ -1,0 +1,31 @@
+From 40db1f44f6a610ea375e7d4fc9aaf942c075509d Mon Sep 17 00:00:00 2001
+From: Patrick Gaskin <pg7254@outlook.com>
+Date: Tue, 13 May 2025 23:12:55 -0400
+Subject: [PATCH 09/10] add dockerfile
+
+---
+ Dockerfile | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+ create mode 100644 Dockerfile
+
+diff --git a/Dockerfile b/Dockerfile
+new file mode 100644
+index 00000000..0efc43e9
+--- /dev/null
++++ b/Dockerfile
+@@ -0,0 +1,12 @@
++FROM debian:bookworm AS base
++RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends nodejs npm
++
++FROM base AS build
++COPY --link ./ /app/
++WORKDIR /app
++RUN npm install
++
++FROM base
++COPY --link --from=build /app/ /app/
++ENTRYPOINT ["/app/bin/stf"]
++CMD ["provider"]
+-- 
+2.49.0
+
