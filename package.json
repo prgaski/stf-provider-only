@@ -2,26 +2,8 @@
   "name": "@devicefarmer/stf",
   "version": "3.7.5",
   "description": "Smartphone Test Farm",
-  "keywords": [
-    "adb",
-    "android",
-    "stf",
-    "test",
-    "remote"
-  ],
-  "bugs": {
-    "url": "https://github.com/DeviceFarmer/stf/issues"
-  },
+  "private": true,
   "license": "Apache-2.0",
-  "author": {
-    "name": "DeviceFarmer",
-    "email": "contact@devicefarmer.com",
-    "url": "https://devicefarmer.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/DeviceFarmer/stf.git"
-  },
   "bin": {
     "stf": "./bin/stf"
   },
@@ -60,15 +42,5 @@
   },
   "engines": {
     "node": ">= 18.20.5"
-  },
-  "externalDependencies": {
-    "zeromq": ">= 4",
-    "protobuf": ">= 3",
-    "adb": "~1"
-  },
-  "preferGlobal": true,
-  "collective": {
-    "type": "opencollective",
-    "url": "https://opencollective.com/openstf"
   }
 }
