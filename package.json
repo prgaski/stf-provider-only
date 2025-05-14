@@ -149,7 +149,7 @@
     "jasmine-reporters": "^2.3.2",
     "karma": "^2.0.2",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-firefox-launcher": "^1.0.0",
+    "karma-firefox-launcher": "^2.1.3",
     "karma-ie-launcher": "^1.0.0",
     "karma-jasmine": "^2.0.1",
     "karma-junit-reporter": "^2.0.1",
