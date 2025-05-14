@@ -45,7 +45,7 @@
     "bufferutil": "^4.0.8",
     "chalk": "^4.1.2",
     "debug": "^3.1.0",
-    "eventemitter3": "^1.2.0",
+    "eventemitter3": "^5.0.1",
     "in-publish": "^2.0.0",
     "lodash": "^4.17.21",
     "my-local-ip": "^1.0.0",
